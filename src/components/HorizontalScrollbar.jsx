@@ -4,6 +4,7 @@ import RightArrowIcon from "../assets/icons/right-arrow.png";
 import LeftArrowIcon from "../assets/icons/left-arrow.png";
 import ExerciseCard from "./ExerciseCard";
 import useSmoothHorizontalScroll from "use-smooth-horizontal-scroll";
+import { useEffect, useState } from "react";
 
 const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
   const { scrollContainerRef, handleScroll, scrollTo } =
@@ -54,13 +55,13 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
           src={LeftArrowIcon}
           alt="left arrow"
           style={{ cursor: "pointer" }}
-          onClick={() => scrollTo(-1408)}
+          onClick={() => scrollTo(-350)}
         />
         <img
           src={RightArrowIcon}
           alt="right arrow"
           style={{ cursor: "pointer" }}
-          onClick={() => scrollTo(1408)}
+          onClick={() => scrollTo(350)}
         />
       </div>
     </>
