@@ -6,7 +6,6 @@ import ExerciseCard from "./ExerciseCard";
 import useSmoothHorizontalScroll from "use-smooth-horizontal-scroll";
 
 const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
-  console.log(bodyParts);
   const { scrollContainerRef, handleScroll, scrollTo } =
     useSmoothHorizontalScroll();
 
@@ -14,6 +13,7 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
     <>
       <Box
         sx={{
+          overflowY: "hidden",
           overflowX: "hidden",
           display: "flex",
           justifyContent: "space-between",
